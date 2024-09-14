@@ -1,0 +1,23 @@
+.favorites-icon {
+  width: 23px;
+  height: 20px;
+}
+
+.basket-icon {
+  width: 24px;
+  height: 25px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 15px 0;
+  list-style: none;
+}
+
+.header-link-group {
+  display: flex;
+  align-items: center;
+}
