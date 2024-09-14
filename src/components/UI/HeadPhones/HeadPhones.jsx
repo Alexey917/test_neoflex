@@ -1,10 +1,15 @@
 import "./HeadPhones.css";
+import ProductCard from "../ProductCard/ProductCard";
 
 const HeadPhones = ({ title, goods }) => {
   return (
-    <section className="section">
+    <section className="section container">
       <h2 className="section-title">{title}</h2>
-      {/* {goods.map()} */}
+      <div className="card-wrapper">
+        {goods.map((item) => (
+          <ProductCard {...item} />
+        ))}
+      </div>
     </section>
   );
 };

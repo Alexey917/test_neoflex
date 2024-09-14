@@ -3,9 +3,16 @@
 }
 
 .section-title {
+  margin-bottom: 20px;
   font-weight: 600;
   font-style: normal;
   font-size: 20px;
   text-decoration: none;
   color: #838383;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
