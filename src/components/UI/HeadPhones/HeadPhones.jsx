@@ -1,13 +1,15 @@
 import "./HeadPhones.css";
 import ProductCard from "../ProductCard/ProductCard";
+import { useState } from "react";
 
 const HeadPhones = ({ title, goods }) => {
+  const oldPriceTrue = title;
   return (
     <section className="section container">
       <h2 className="section-title">{title}</h2>
       <div className="card-wrapper">
-        {goods.map((item) => (
-          <ProductCard {...item} />
+        {goods.map((item, index) => (
+          <ProductCard key={index} {...item} oldPriceTrue={title} />
         ))}
       </div>
     </section>
