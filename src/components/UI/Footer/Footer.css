@@ -1,0 +1,30 @@
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 29px;
+  background-color: #fff;
+  border-radius: 30px 30px 0 0;
+}
+
+.vk-icon {
+  width: 30px;
+  height: 20px;
+}
+
+.tg-icon, .whatsapp-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
