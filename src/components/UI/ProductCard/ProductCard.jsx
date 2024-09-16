@@ -1,7 +1,7 @@
 import "./ProductCard.css";
 import star from "../../../images/sprite.svg#star";
 
-const ProductCard = ({ oldPriceTrue, inBasket, ...good }) => {
+const ProductCard = ({ oldPriceTrue, inBasket, count, ...good }) => {
   return (
     <div className="card">
       <img className="card-img" src={good.img} alt="" />
@@ -30,7 +30,7 @@ const ProductCard = ({ oldPriceTrue, inBasket, ...good }) => {
           )}
         </div>
 
-        <button className="card-btn" onClick={() => inBasket()}>
+        <button className="card-btn" onClick={() => inBasket(good)}>
           <span className="card-title">Купить</span>
         </button>
       </div>

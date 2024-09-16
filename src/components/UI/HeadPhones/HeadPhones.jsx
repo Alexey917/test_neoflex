@@ -1,8 +1,7 @@
 import "./HeadPhones.css";
 import ProductCard from "../ProductCard/ProductCard";
-import { useState } from "react";
 
-const HeadPhones = ({ title, goods, inBasket }) => {
+const HeadPhones = ({ title, goods, inBasket, count }) => {
   return (
     <section className="section container">
       <h2 className="section-title">{title}</h2>
@@ -13,6 +12,7 @@ const HeadPhones = ({ title, goods, inBasket }) => {
             {...item}
             oldPriceTrue={title}
             inBasket={inBasket}
+            count={count}
           />
         ))}
       </div>

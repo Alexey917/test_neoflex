@@ -12,8 +12,9 @@ const Main = () => {
 
   const [count, setCount] = useOutletContext();
 
-  const inBasket = () => {
+  const inBasket = (good) => {
     setCount(count + 1);
+    sessionStorage.setItem(count, JSON.stringify(good));
     console.log(count);
   };
 
@@ -25,6 +26,7 @@ const Main = () => {
           title={item.title}
           goods={item.goods}
           inBasket={inBasket}
+          count={count}
         />
       ))}
     </>

@@ -27,9 +27,13 @@ const Header = ({ count }) => {
                 <use href={basket + "#basket"}></use>
               </svg>
             </Link>
-            <div className="quantity-wrapper">
-              <span className="quantity">{count}</span>
-            </div>
+            {count !== 0 ? (
+              <div className="quantity-wrapper">
+                <span className="quantity">{count}</span>
+              </div>
+            ) : (
+              ""
+            )}
           </li>
         </div>
       </ul>
