@@ -4,7 +4,7 @@ import basket from "../../../images/sprite.svg#basket";
 import "./Header.css";
 import Logo from "../Logo/Logo";
 
-const Header = () => {
+const Header = ({ count }) => {
   return (
     <nav className="container">
       <ul className="header-list">
@@ -13,7 +13,7 @@ const Header = () => {
         </li>
 
         <div className="header-link-group">
-          <li>
+          <li className="fulcrum">
             <Link to="/favorites">
               <svg className="favorites-icon">
                 <use href={favorites + "#favorites"}></use>
@@ -21,12 +21,15 @@ const Header = () => {
             </Link>
           </li>
 
-          <li>
+          <li className="fulcrum">
             <Link to="/basket">
               <svg className="basket-icon">
                 <use href={basket + "#basket"}></use>
               </svg>
             </Link>
+            <div className="quantity-wrapper">
+              <span className="quantity">{count}</span>
+            </div>
           </li>
         </div>
       </ul>

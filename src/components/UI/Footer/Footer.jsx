@@ -5,14 +5,10 @@ import tg from "../../../images/sprite.svg#tg";
 import whatsapp from "../../../images/sprite.svg#whatsapp";
 import lang from "../../../images/sprite.svg#lang";
 import "./Footer.css";
-import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
-const Footer = () => {
-  const [languages, setLanguages] = useState([
-    { main: "Рус", basket: "Рус" },
-    { main: "Eng", basket: "Eng" },
-    { main: "", basket: "Каз" },
-  ]);
+const Footer = ({ languages }) => {
+  const location = useLocation();
 
   return (
     <footer className="container footer">
@@ -47,8 +43,11 @@ const Footer = () => {
             </li>
             {languages.map((item, index) => (
               <li key={index}>
-                <Link to={item.main} className="lang-link">
-                  {item.main}
+                <Link
+                  to={location.pathname === "/" ? item.main : item.basket}
+                  className="lang-link"
+                >
+                  {location.pathname === "/" ? item.main : item.basket}
                 </Link>
               </li>
             ))}

@@ -1,7 +1,7 @@
 import "./ProductCard.css";
 import star from "../../../images/sprite.svg#star";
 
-const ProductCard = ({ oldPriceTrue, ...good }) => {
+const ProductCard = ({ oldPriceTrue, inBasket, ...good }) => {
   return (
     <div className="card">
       <img className="card-img" src={good.img} alt="" />
@@ -15,7 +15,13 @@ const ProductCard = ({ oldPriceTrue, ...good }) => {
           <span className="card-title card-rate">{good.rate}</span>
         </div>
 
-        <div className="price-group">
+        <div
+          className={
+            good.OldPrice && oldPriceTrue !== undefined
+              ? "price-group"
+              : "without-old"
+          }
+        >
           <p className="card-title card-price">{good.price} &#8381;</p>
           {good.OldPrice && oldPriceTrue !== undefined ? (
             <p className="card-title old-price">{good.OldPrice} &#8381;</p>
@@ -24,7 +30,7 @@ const ProductCard = ({ oldPriceTrue, ...good }) => {
           )}
         </div>
 
-        <button className="card-btn">
+        <button className="card-btn" onClick={() => inBasket()}>
           <span className="card-title">Купить</span>
         </button>
       </div>

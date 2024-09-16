@@ -19,11 +19,7 @@
   
   columns: 2 auto;
   text-align: right;
-  /* grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 32px; 
-  justify-content: space-between; */
-  margin: 0 18px 26px 21px;
+  margin-bottom: 26px;
 }
 
 .card-title {
@@ -71,6 +67,14 @@
   text-decoration: line-through;
 }
 
+.price-style {
+  margin-bottom: 16px;
+}
+
 .price-group {
   margin-bottom: 16px;
+}
+
+.without-old {
+  margin-bottom: 32px;
 }

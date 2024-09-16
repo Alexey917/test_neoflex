@@ -22,3 +22,27 @@
   align-items: center;
   gap: 25px;
 }
+
+.fulcrum {
+  position: relative;
+}
+
+.quantity-wrapper {
+  position: absolute;
+  top: -6px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #FFA542;
+}
+
+.quantity {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  color: #ffffff;
+}
