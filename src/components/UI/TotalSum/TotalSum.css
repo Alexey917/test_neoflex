@@ -1,0 +1,14 @@
+.total-sum {
+  display: flex;
+  flex-direction: column;
+  width: 349px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.total-wrapper {
+  margin: 21px 16px 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

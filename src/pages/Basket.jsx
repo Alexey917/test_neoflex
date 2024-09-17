@@ -1,14 +1,11 @@
 import YourGoods from "../components/UI/YourGoods/YourGoods";
+import TotalSum from "../components/UI/TotalSum/TotalSum";
 
 const Basket = () => {
   return (
-    <section className="basket">
+    <section className="basket container" style={{ display: "flex" }}>
       <YourGoods />
-
-      <div className="total-sum">
-        <div></div>
-        <button></button>
-      </div>
+      <TotalSum />
     </section>
   );
 };

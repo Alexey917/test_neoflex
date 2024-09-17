@@ -1,5 +1,7 @@
 import Good from "../Good/Good";
 
+import "./YourGoods.css";
+
 const YourGoods = () => {
   return (
     <div className="basket container">

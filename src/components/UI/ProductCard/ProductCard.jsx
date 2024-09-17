@@ -4,7 +4,7 @@ import star from "../../../images/sprite.svg#star";
 const ProductCard = ({ oldPriceTrue, inBasket, count, ...good }) => {
   return (
     <div className="card">
-      <img className="card-img" src={good.img} alt="" />
+      <img className="card-img" src={good.img} alt={good.title} />
       <div className="features">
         <h3 className="card-title">{good.title}</h3>
 

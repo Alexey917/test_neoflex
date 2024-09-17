@@ -1,0 +1,100 @@
+.basket-wrapper {
+  margin: 13px 0 20px 0;
+  padding: 18px 28px 15px 19px;
+  width: 633px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 19px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: -200px;
+  margin-top: 51px;
+}
+
+.info-title {
+  margin: 0;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 17px;
+  color: #1C1C27;
+}
+
+.info-price {
+  margin: 12px 0 0 0;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  color: #AAAAAA;
+}
+
+.btn-price-group {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.btn-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFCE7F;
+  border: none;
+  cursor: pointer;
+}
+
+.count-good {
+  margin: 0;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px;
+  color: #000000;
+}
+
+.basket-good-price {
+  margin: 0;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  color: #1C1C27;
+}
+
+.basket-img {
+  width: 146px;
+  height: 136px;
+}
+
+.del-icon {
+  width: 20px;
+  height: 17px;
+}
+
+.minus-icon {
+  width: 14px;
+  height: 2px;
+}
+
+.plus-icon {
+  width: 15px;
+  height: 14px;
+}
+
+.btn-del {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
