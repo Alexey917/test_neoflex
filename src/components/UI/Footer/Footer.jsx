@@ -30,7 +30,7 @@ const Footer = ({ languages }) => {
           </Link>
         </li>
         <li className="footer-list-item">
-          <Link to="/service" className="footer-link">
+          <Link to="/conditions" className="footer-link">
             Условия сервиса
           </Link>
         </li>
@@ -57,19 +57,25 @@ const Footer = ({ languages }) => {
 
       <ul className="social-list">
         <li>
-          <svg className="vk-icon">
-            <use href={vk + "#vk"}></use>
-          </svg>
+          <Link to="https://vk.com/">
+            <svg className="vk-icon">
+              <use href={vk + "#vk"}></use>
+            </svg>
+          </Link>
         </li>
         <li>
-          <svg className="tg-icon">
-            <use href={tg + "#tg"}></use>
-          </svg>
+          <Link to="https://web.telegram.org/k/">
+            <svg className="tg-icon">
+              <use href={tg + "#tg"}></use>
+            </svg>
+          </Link>
         </li>
         <li>
-          <svg className="whatsapp-icon">
-            <use href={whatsapp + "#whatsapp"}></use>
-          </svg>
+          <Link to="https://web.whatsapp.com/">
+            <svg className="whatsapp-icon">
+              <use href={whatsapp + "#whatsapp"}></use>
+            </svg>
+          </Link>
         </li>
       </ul>
     </footer>

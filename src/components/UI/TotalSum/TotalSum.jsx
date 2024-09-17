@@ -2,13 +2,13 @@ import "./TotalSum.css";
 
 const TotalSum = () => {
   return (
-    <div className="total-sum container">
+    <div className="total-sum">
       <div className="total-wrapper">
-        <p>ИТОГО</p>
-        <p>?</p>
+        <p className="total-text">ИТОГО</p>
+        <p className="total-text">?</p>
       </div>
-      <button>
-        <span>Перейти к оформлению</span>
+      <button className="btn-total">
+        <span className="total-text total-color">Перейти к оформлению</span>
       </button>
     </div>
   );

@@ -1,8 +1,10 @@
 .total-sum {
+  margin-top: 64px;
   display: flex;
   flex-direction: column;
   width: 349px;
-  border-radius: 30px;
+  height: 65px;
+  border-radius: 30px 30px 0 0;
   background-color: #fff;
 }
 
@@ -11,4 +13,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.total-text {
+  margin: 0;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  color: #000000;
+}
+
+.btn-total {
+  padding: 22px 14px;
+  border-radius: 20px;
+  background-color: #101010;
+  cursor: pointer;
+}
+
+.total-color {
+  color:#fff;
+  font-size: 17px;
 }

@@ -4,7 +4,7 @@ import "./YourGoods.css";
 
 const YourGoods = () => {
   return (
-    <div className="basket container">
+    <div className="your-goods">
       <h2 className="yourGoods-title">Корзина</h2>
       <div className="your-goods">
         <Good />

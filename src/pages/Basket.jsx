@@ -3,7 +3,13 @@ import TotalSum from "../components/UI/TotalSum/TotalSum";
 
 const Basket = () => {
   return (
-    <section className="basket container" style={{ display: "flex" }}>
+    <section
+      className={
+        sessionStorage.length <= 2
+          ? "basket container full-screen"
+          : "basket container"
+      }
+    >
       <YourGoods />
       <TotalSum />
     </section>

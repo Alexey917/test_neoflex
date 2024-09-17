@@ -5,3 +5,17 @@
   font-size: 20px;
   color: #1C1C27;
 }
+
+.your-goods {
+  height: inherit;
+}
+
+.basket {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+.full-screen {
+  height: 100vh;
+}
