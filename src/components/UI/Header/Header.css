@@ -1,11 +1,13 @@
 .favorites-icon {
   width: 23px;
   height: 20px;
+  fill: #838383;
 }
 
 .basket-icon {
   width: 24px;
   height: 25px;
+  fill: #838383;
 }
 
 .header-list {
@@ -45,4 +47,11 @@
   font-style: normal;
   font-size: 15px;
   color: #ffffff;
+}
+
+@media (min-width: 992px) {
+  .fulcrum:hover {
+    transform: translateY(-5px);
+    fill: #FFA542;
+  }
 }

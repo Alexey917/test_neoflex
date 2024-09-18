@@ -45,6 +45,10 @@
   list-style: none;
 }
 
+.social-link {
+  fill: #101010;
+}
+
 .lang-icon {
   width: 20px;
   height: 20px;
@@ -65,4 +69,30 @@
   font-size: 15px;
   color: #101010;
   text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .footer-list-item:hover {
+    transform: translateY(-3px);  
+  }
+
+  .footer-list-item:hover .footer-link {
+    color: #FFA542;
+  }
+
+  .social-list-item:hover {
+    transform: translateY(-5px); 
+  }
+
+  .social-list-item:hover .social-link {
+    fill:#FFA542; 
+  }
+
+  .lang-item:hover {
+    transform: translateY(-3px); 
+  }
+
+  .lang-item:hover .lang-link {
+    color: #FFA542;
+  }
 }

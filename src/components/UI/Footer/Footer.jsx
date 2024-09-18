@@ -42,7 +42,7 @@ const Footer = ({ languages }) => {
               </svg>
             </li>
             {languages.map((item, index) => (
-              <li key={index}>
+              <li key={index} className="lang-item">
                 <Link
                   to={location.pathname === "/" ? item.main : item.basket}
                   className="lang-link"
@@ -56,22 +56,22 @@ const Footer = ({ languages }) => {
       </ul>
 
       <ul className="social-list">
-        <li>
-          <Link to="https://vk.com/">
+        <li className="social-list-item">
+          <Link to="https://vk.com/" className="social-link vk">
             <svg className="vk-icon">
               <use href={vk + "#vk"}></use>
             </svg>
           </Link>
         </li>
-        <li>
-          <Link to="https://web.telegram.org/k/">
+        <li className="social-list-item">
+          <Link to="https://web.telegram.org/k/" className="social-link">
             <svg className="tg-icon">
               <use href={tg + "#tg"}></use>
             </svg>
           </Link>
         </li>
-        <li>
-          <Link to="https://web.whatsapp.com/">
+        <li className="social-list-item">
+          <Link to="https://web.whatsapp.com/" className="social-link">
             <svg className="whatsapp-icon">
               <use href={whatsapp + "#whatsapp"}></use>
             </svg>

@@ -52,8 +52,8 @@
 
 .card-btn {
   padding: 0;
-  width: 65px;
-  height: 21px;
+  width: 80px;
+  height: 31px;
   border: none;
   background-color: #ffffff;
   color: #000000;
@@ -77,4 +77,16 @@
 
 .without-old {
   margin-bottom: 32px;
+}
+
+@media (min-width: 992px) {
+  .card-btn:hover {
+    background-color: #FFA542;
+    border-radius: 10px;
+    
+  }
+
+  .card-btn:hover .card-title {
+    color: #ffffff;
+  }
 }

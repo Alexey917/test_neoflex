@@ -1,7 +1,9 @@
+import AnotherPages from "../components/AnotherPages";
+
 const ConditionsService = () => {
   return (
     <>
-      <h1 style={{ textAlign: "center", height: "100vh" }}>Условия сервиса</h1>
+      <AnotherPages title="Условия сервиса" />
     </>
   );
 };

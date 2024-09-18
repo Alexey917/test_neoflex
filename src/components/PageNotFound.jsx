@@ -1,9 +1,13 @@
+import AnotherPages from "./AnotherPages";
+
 const PageNotFound = () => {
   return (
     <>
-      <h1 style={{ textAlign: "center", height: "100vh" }}>
-        Страница не найдена!
-      </h1>
+      <AnotherPages
+        title="Страница не найдена!"
+        link="Вернуться на главную"
+        path="/"
+      />
     </>
   );
 };

@@ -34,3 +34,11 @@
   color:#fff;
   font-size: 17px;
 }
+
+@media (min-width: 992px) {
+  .btn-total:hover {
+    background-color: #FFA542;
+    border: 1px solid #FFA542;
+    transition: 0.5s;
+  }
+}

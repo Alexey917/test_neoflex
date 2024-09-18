@@ -6,3 +6,9 @@
   color: #101010;
   height: max-content;
 }
+
+@media (min-width: 992px) {
+  .logo:hover {
+    color: #FFA542;
+  }
+}
