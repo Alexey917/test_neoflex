@@ -3,34 +3,35 @@ import minus from "../../../images/sprite.svg#minus";
 import plus from "../../../images/sprite.svg#plus";
 import "./Good.css";
 import { useState } from "react";
+import useTotalSum from "../../../hooks/useTotalSum";
 
-const Good = ({ total, setTotal, item }) => {
-  const [sum, setSum] = useState(1);
-
-  const increase = (elem) => {
+const Good = ({ total, item, sum, setSum }) => {
+  const increase = () => {
     setSum(sum + 1);
-    console.log(total);
-    console.log(elem);
-    setTotal(total + elem);
   };
 
-  const decrease = (elem) => {
+  const decrease = () => {
     setSum(sum - 1);
-    setTotal(total - elem);
   };
+
+  useTotalSum(sum);
 
   return (
     <div className="basket-wrapper">
       <div className="item-wrapper">
         <img className="basket-img" src={item.img} alt={item.title} />
         <div className="btn-price-group">
-          <button className="btn-price" onClick={() => decrease(item.price)}>
+          <button
+            className="btn-price"
+            onClick={() => decrease()}
+            disabled={sum <= 1 ? "True" : ""}
+          >
             <svg className="minus-icon">
               <use href={minus + "#minus"}></use>
             </svg>
           </button>
           <span className="count-good">{sum}</span>
-          <button className="btn-price" onClick={() => increase(item.price)}>
+          <button className="btn-price" onClick={() => increase()}>
             <svg className="plus-icon">
               <use href={plus + "#plus"}></use>
             </svg>

@@ -1,7 +1,6 @@
 import "./TotalSum.css";
 
 const TotalSum = ({ total }) => {
-  console.log(total);
   return (
     <div className="total-sum">
       <div className="total-wrapper">

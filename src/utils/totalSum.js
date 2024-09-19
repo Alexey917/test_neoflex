@@ -2,7 +2,8 @@ import fromSessionStorage from "./fromSessionStorage";
 
 const totalSum = () => {
   let arr = fromSessionStorage();
-  return arr.reduce((acc, item) => acc + item.price, 0);
+  let res = arr.reduce((acc, item) => acc + item.price, 0);
+  return res;
 };
 
 export default totalSum;

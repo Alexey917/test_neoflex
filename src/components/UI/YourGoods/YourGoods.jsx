@@ -3,7 +3,7 @@ import fromSessionStorage from "../../../utils/fromSessionStorage";
 
 import "./YourGoods.css";
 
-const YourGoods = ({ total, setTotal }) => {
+const YourGoods = ({ total, sum, setSum }) => {
   const goods = fromSessionStorage();
 
   return (
@@ -11,7 +11,13 @@ const YourGoods = ({ total, setTotal }) => {
       <h2 className="yourGoods-title">Корзина</h2>
       <div className="your-goods">
         {goods.map((item, index) => (
-          <Good key={index} total={total} setTotal={setTotal} item={item} />
+          <Good
+            key={index}
+            total={total}
+            item={item}
+            sum={sum}
+            setSum={setSum}
+          />
         ))}
       </div>
     </div>
