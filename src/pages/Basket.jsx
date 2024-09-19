@@ -1,7 +1,17 @@
 import YourGoods from "../components/UI/YourGoods/YourGoods";
 import TotalSum from "../components/UI/TotalSum/TotalSum";
+import { useEffect, useState } from "react";
+import totalSum from "../utils/totalSum";
 
 const Basket = () => {
+  let [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    setTotal(totalSum);
+  }, [total]);
+
+  console.log(total);
+
   return (
     <section
       className={
@@ -10,8 +20,8 @@ const Basket = () => {
           : "basket container"
       }
     >
-      <YourGoods />
-      <TotalSum />
+      <YourGoods total={total} setTotal={setTotal} />
+      <TotalSum total={total} />
     </section>
   );
 };

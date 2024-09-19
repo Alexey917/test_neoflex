@@ -3,6 +3,7 @@ import HeadPhones from "../components/UI/HeadPhones/HeadPhones";
 import { headphones, wirelessHeadphones } from "../data/headphones";
 import { useState } from "react";
 
+
 const Main = () => {
   const [products] = useState([
     { title: "Наушники", goods: headphones },
@@ -15,7 +16,6 @@ const Main = () => {
   const inBasket = (good) => {
     setCount(count + 1);
     sessionStorage.setItem(count, JSON.stringify(good));
-    console.log(count);
   };
 
   return (
